@@ -113,7 +113,7 @@
                             </div>    
                         </div>-->
                         <div class="row margin-b-30">
-						<div style="width:50%;float:left">
+						<div id = "columnLeft" style="width:50%;float:left">
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 style="margin-top: 40px;">
                                 <div class="box london">
                                     <div class="box-icon">
@@ -288,7 +288,7 @@
                             </div>
                         </div> 
 			<!--split -->
-						<div style="width:50%;float:left">
+						<div id = "columnRight" style="width:50%;float:left">
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                 <div class="box paris">
                                     <div class="box-icon">
@@ -517,6 +517,39 @@
     <!-- JavaScript -->
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+	<script>
+	var winWidth = 0; 
+var winHeight = 0; 
+function findDimensions() 
+{ 
+    if (window.innerWidth) 
+        winWidth = window.innerWidth; 
+    else if ((document.body) && (document.body.clientWidth)) 
+        winWidth = document.body.clientWidth; 
+    /*if (window.innerHeight) 
+        winHeight = window.innerHeight; 
+    else if ((document.body) && (document.body.clientHeight)) 
+        winHeight = document.body.clientHeight;  */
+    if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) 
+    { 
+        //winHeight = document.documentElement.clientHeight; 
+        winWidth = document.documentElement.clientWidth; 
+    } 
+	if(winWidth < 500){
+		document.getElementById("columnRight").style.float = "none";
+		document.getElementById("columnRight").style.width = "100%";
+		document.getElementById("columnLeft").style.width = "100%";
+	}
+	else{
+	document.getElementById("columnRight").style.float = "left";
+		document.getElementById("columnRight").style.width = "50%";
+		document.getElementById("columnLeft").style.width = "50%";
+	}
+    //console.log("Height: " + winHeight); 
+    //console.log("Width: " + winWidth +"\r\n");
+} 
+findDimensions(); 
+window.onresize=findDimensions;
+	</script>
 </body>
 </html>
