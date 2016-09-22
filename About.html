@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="height:100%">
+	<head>
+		<title>mini project for CJ</title>
+		<script type="text/javascript" src="script/jquery-3.1.0.min.js"></script>		
+		<script type="text/javascript" src="script/typed.js"></script>			
+		<script type="text/javascript" src="script/bootstrap.js"></script>
+		<link href="style/style.css" type="text/css" rel="stylesheet" />
+		<link href="style/font-awesome.css" type="text/css" rel="stylesheet" />	
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">		
+	</head>
+	<body style="height:100%;margin:0;background:url('http://www.dujin.org/sys/bing/1920.php') 50% 50% / cover repeat scroll padding-box border-box rgba(0, 0, 0, 0); background-size:cover;background-attachment: fixed;">
+		<div id="SideMenu" style="height:100%;margin:0;background:rgb(240,240,240);opacity:0;width:230px;margin-left:-210px;height:100%;padding:0;position:fixed;z-index: 10;">
+				<ul class="NavigationBar">
+				<li class="NavigationMenu"><div class="NavigationMenu" onclick="window.open('index.html','_self')">Home</div></li>
+				<li class="NavigationMenu"><div class="NavigationMenu" onclick="window.open('Gallery.html','_self')">Gallery</div></li>
+				<li class="NavigationMenu"><div class="NavigationMenu" onclick="window.open('About.html','_self')" >About</div></li>
+			</ul>
+		</div>
+		<div id="MainContainer" style="height:100%;margin:0;padding:0;">			
+			<div style="width:50%">
+				<div style="border: 9px solid white; float: right; margin-top: 120px;">
+					<img  src="img/12.jpg" width="300" />
+				</div>
+				<div style="font-family: Microsoft YaHei; color: white; margin-top: 220px; margin-right: 40px; float: right; font-weight: 300; font-size: 26px;">
+					<span>SOFTWARE ENGINEER</span>
+				</div>
+			</div>
+			<div style="width: 50%; float: right; margin-top:50px">
+				<div style="border: 9px solid white; float: left;">
+					<img  src="img/16.jpg" width="300" />
+				</div>
+				<div style="font-family: Microsoft YaHei; color: white; margin-top: 110px; margin-left: 40px; float: left; font-weight: 300; font-size: 26px;">
+					<span>JOURNALIST</span>
+				</div>
+			</div>
+			<div>
+			</div>
+		</div>
+		
+		<div style="position: fixed;color:white;z-index: 10;right: 0;margin-right: 30px;top: 0;cursor: pointer;">
+			<ul class="RightButtonList">
+				<li><p><i class="icon-time icon-2x" onclick="SwithClockScreen()"></i> </p></li>
+				<li><p><i class="icon-picture icon-2x" style="font-size: 28px;" onclick="ChangeBackgroundImg()"></i> </p></li>
+			</ul>
+		</div>	
+		<div id="TimeScreen" style="margin:0 0 0 4%;padding:0;position:fixed;top:0;left:0;z-index:9;height:100%;width:96%;color: white;display:none">
+				<span id="Time"></span>
+		</div>
+		<script type="text/javascript" src="script/Func.js"></script>
+	</body>
+</html>
