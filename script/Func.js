@@ -1,4 +1,4 @@
-var bSideMenuShow,bSideMenuLock = false;
+﻿var bSideMenuShow,bSideMenuLock = false;
 
 $(document).ready(function() {
     var TheDate = new Date("March 28, 2015");
@@ -9,7 +9,7 @@ $(document).ready(function() {
     
 	window.onload=function(){
 		$("#Ourdate").typed({
-            strings: ["It has been " + deltaTogether + " days sine we fell in love^500<br>" + deltaMeet + " days since we met^500<br>&nbsp;Wu Bin &amp; Chen Jian"],
+            strings: ["It has been " + deltaTogether + " days sine we fell in love^500<br>" + deltaMeet + " days since we met^500<br>&nbsp;Wu Bin ♡ Chen Jian"],
             typeSpeed: 60,
             startDelay: 500,
             loop: false,
@@ -92,12 +92,12 @@ function ChangeBackgroundImg(){
 	}
 	else{		
 		bOwnBackground = false;
-		$("body").css('background','transparent url("http://www.dujin.org/sys/bing/1920.php") repeat fixed 50% 50% / cover');
+		$("body").css('background','transparent url("http://www.dujin.org/sys/bing/1366.php") repeat fixed 50% 50% / cover');
 	}
 		
 	
 }
-
+/*
 var bNoteBookShowed = false;
 function ShowNoteBook(){
 	if(!bNoteBookShowed){
@@ -109,3 +109,4 @@ function ShowNoteBook(){
 		$("#notebook").fadeOut();		
 	}
 }
+*/

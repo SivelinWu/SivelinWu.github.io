@@ -50,7 +50,7 @@
 	max-width:100%;
 	background:#ccc;
 	display:block;
-	background:url(../images/loding.gif) no-repeat center;
+	background:url(../img/loading.gif) no-repeat center;
     cursor: pointer;
 }
 
