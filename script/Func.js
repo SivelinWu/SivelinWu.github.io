@@ -1,4 +1,5 @@
 ﻿var bSideMenuShow,bSideMenuLock = false;
+var seed,seed2;
 
 $(document).ready(function() {
     var TheDate = new Date("March 28, 2015");
@@ -6,6 +7,7 @@ $(document).ready(function() {
     var DateNow = new Date();
     var deltaTogether = Math.floor((DateNow.getTime() - TheDate.getTime()) / (24 * 3600 * 1000));
     var deltaMeet = Math.floor((DateNow.getTime() - MeetDate.getTime()) / (24 * 3600 * 1000));
+	ChangeBackgroundImg();
     
 	window.onload=function(){
 		$("#Ourdate").typed({
@@ -15,8 +17,12 @@ $(document).ready(function() {
             loop: false,
 			showCursor: true,
 			cursorChar: "|",
-			callback: function() {$(".typed-cursor").html("&nbsp;");},
+			callback: function() {
+				$(".typed-cursor").html("&nbsp;");
+				setTimeout("$('#CenterContainer').fadeOut('5000');$('#GrowingTime').fadeIn('5000');",5000);			
+				},
         });
+		seed2 = setInterval("UpdateDeltaT(new Date('March 28, 2015'))",1000);
 	}
 });
 
@@ -48,7 +54,7 @@ $('#SideMenu').mouseleave(function(){
 		//$('#SideMenu').animate({width:'15px'},'slow',function(){$('#SideMenu').css('opacity','0')});
 	}
 });
-var seed;
+
 function SwithClockScreen(){
 	if($("#TimeScreen").css('display') == 'none'){
 		$("#TimeScreen").fadeIn('fast',function(){seed =setInterval(UpdateClock,1000);});
@@ -64,24 +70,48 @@ function SwithClockScreen(){
 	}
 }
 
+function UpdateDeltaT(d1){
+	var DateNow = new Date();
+	var deltaT = DateNow.getTime() - d1.getTime();
+	var temp = deltaT / (24 * 3600 * 1000);
+	var deltaDay = Math.floor(temp);
+	temp = (temp - deltaDay)*24;
+	var deltaHour = Math.floor(temp);
+	temp = (temp - deltaHour)*60;
+	var deltaMin = Math.floor(temp);
+	temp = (temp - deltaMin)*60;
+	var deltaSec = Math.floor(temp);
+	$("#GrowingDay").html(FormatDigital(deltaDay));
+	$("#GrowingD").html("days");
+	$("#GrowingHour").html(FormatDigital(deltaHour));
+	$("#GrowingH").html("hours");
+	$("#GrowingMin").html(FormatDigital(deltaMin));
+	$("#GrowingM").html("minutes");
+	$("#GrowingSec").html(FormatDigital(deltaSec));
+	$("#GrowingS").html("seconds");
+	//$("#GrowingT").html(deltaDay+"days" + deltaHour+"hours"+deltaMin +"minutes"+deltaSec+"seconds");
+}
+
 function UpdateClock(){
 	var time = new Date();
 	var Hour = time.getHours();
 	var Min = time.getMinutes();
 	var Sec = time.getSeconds();
-	function FormatDigital(digital){
-		var newDigital = "";
-		if(digital < 10)
-			newDigital = "0" + digital.toString();
-		else 
-			newDigital = digital.toString();
-		return newDigital;
-	}
+	
 	var strTime = FormatDigital(Hour) + ":" + FormatDigital(Min) + ":" + FormatDigital(Sec);
 	$("#Time").html(strTime);/*
 	$("#tbHouur").html(FormatDigital(Hour));
 	$("#tbMin").html(FormatDigital(Min));
 	$("#tbSec").html(FormatDigital(Sec));*/
+}
+
+function FormatDigital(digital){
+	var newDigital = "";
+	if(digital < 10)
+		newDigital = "0" + digital.toString();
+	else 
+		newDigital = digital.toString();
+	return newDigital;
 }
 
 var bOwnBackground = false;
