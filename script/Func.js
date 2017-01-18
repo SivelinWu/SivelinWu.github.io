@@ -10,7 +10,7 @@ $(document).ready(function() {
 	ChangeBackgroundImg();
     
 	window.onload=function(){
-		if(location.hostname.lastIndexOf("index") >0 ||location.pathname.lastIndexOf("index") > 0){
+		if(location.hostname.lastIndexOf("About") == -1 || location.pathname.lastIndexOf("About") == -1 || location.hostname.lastIndexOf("Gallery") == -1 || location.pathname.lastIndexOf("Gallery") == -1){
 		$("#Ourdate").typed({
             strings: ["It has been " + deltaTogether + " days sine we fell in love^500<br>" + deltaMeet + " days since we met^500<br>&nbsp;Wu Bin ♡ Chen Jian"],
             typeSpeed: 60,
