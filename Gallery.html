@@ -53,7 +53,7 @@
 		<div id="TimeScreen" style="margin:0 0 0 4%;padding:0;position:absolute;top:0;left:0;z-index:9;height:100%;width:96%;color: white;display:none">
 				<span id="Time"></span>
 		</div>
-		<div id="GrowingTime" style="margin:0 0 0 4%;padding:0;position:fixed;top:0;left:0;z-index:9;height:100%;width:96%;color: white;display:none">
+		<div id="GrowingTime" style="margin:0 0 0 4%;padding:0;position:fixed;top:0;left:0;z-index:9;width:96%;color: white;display:none">
 			<div style="right: 75px;position: fixed;top: 20px;">
 				<span id="GrowingDay" class="GrowingT"></span>
 				<span id="GrowingD" style="font-family: Microsoft YaHei; color: white; font-size: 1em;"></span>
@@ -73,7 +73,7 @@
 			function loadImg(){
 				var imgContainer = document.getElementById('container');
 				for(var i=0;i<30;i++){
-					imgContainer.innerHTML += "<div class='grid'><div class='imgholder'><img class='lazy thumb_photo' title='image_" + (i+1) + "' src='img/pixel.gif' data-original='img/" + (i+1) + ".jpg' width='225'/></div></div>";
+					imgContainer.innerHTML += "<div class='grid'><div class='imgholder'><img class='lazy thumb_photo' title='" + (i+1) + "' src='img/pixel.gif' data-original='img/" + (i+1) + ".jpg' width='225'/></div></div>";
 				}
 			}
 			loadImg();
