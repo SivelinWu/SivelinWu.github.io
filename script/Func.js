@@ -7,7 +7,7 @@ $(document).ready(function() {
     var DateNow = new Date();
     var deltaTogether = Math.floor((DateNow.getTime() - TheDate.getTime()) / (24 * 3600 * 1000));
     var deltaMeet = Math.floor((DateNow.getTime() - MeetDate.getTime()) / (24 * 3600 * 1000));
-	ChangeBackgroundImg();
+	//ChangeBackgroundImg();
     
 	window.onload=function(){
 		if(location.hostname.lastIndexOf("About") == -1 || location.pathname.lastIndexOf("About") == -1 || location.hostname.lastIndexOf("Gallery") == -1 || location.pathname.lastIndexOf("Gallery") == -1){
