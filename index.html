@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="height:100%">
+	<head>
+		<title>Utopia | Wu Bin & Chen Jian</title>
+		<script type="text/javascript" src="script/jquery-3.1.0.min.js"></script>		
+		<script type="text/javascript" src="script/typed.js"></script>			
+		<script type="text/javascript" src="script/bootstrap.js"></script>
+		<link href="style/style.css" type="text/css" rel="stylesheet" />
+		<link href="style/font-awesome.css" type="text/css" rel="stylesheet" />	
+		<link rel="shortcut icon" href="favicon.ico">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">		
+	</head>
+	<body style="height:100%;margin:0;background:url('http://www.dujin.org/sys/bing/1366.php') 50% 50% / cover repeat scroll padding-box border-box rgba(0, 0, 0, 0); background-size:cover;background-attachment: fixed;">
+		<div id="SideMenu" style="height:100%;margin:0;background:rgb(240,240,240);opacity:0;width:230px;margin-left:-210px;height:100%;padding:0;position:fixed;z-index: 10;">
+				<ul class="NavigationBar">
+				<li class="NavigationMenu"><div class="NavigationMenu" onclick="window.open('index.html','_self')">Home</div></li>
+				<li class="NavigationMenu"><div class="NavigationMenu" onclick="window.open('Gallery.html','_self')">Gallery</div></li>
+				<li class="NavigationMenu"><div class="NavigationMenu" onclick="window.open('About.html','_self')" >About</div></li>
+			</ul>
+		</div>
+		<div id="MainContainer" style="height:100%;margin:0;padding:0;">			
+			<div id="CenterContainer" style="z-index: 1; font-family: Microsoft YaHei; color: white; font-size: 2.6em; top: 0px; left: 0px; padding-top: 15%; text-align: center;font-weight: 300;">
+				<span id="Ourdate"></span>
+			</div><!--	
+			<div style="position: fixed; color: white; z-index: 5; right: 495px; top: 230px; cursor: default;">
+				<p><i class="icon-map-marker icon-2x"></i> </p>
+				<span style="font-family: Microsoft YaHei;font-size: 20px; top: 276px; position: fixed; right: 468px;">Deqing</span>
+			</div>
+			<div style="position: fixed; color: white; z-index: 5; right: 228px; top: 370px; cursor: default;">
+				<p><i class="icon-map-marker icon-2x"></i> </p>
+				<span style="font-family: Microsoft YaHei;font-size: 20px; position: fixed; right: 188px; top: 415px;">Hangzhou</span>
+			</div>-->
+		</div>
+		
+		<div style="position: fixed;color:white;z-index: 10;right: 0;margin-right: 30px;top: 0;cursor: pointer;">
+			<ul class="RightButtonList">
+				<!--<li><p><i class="icon-time icon-2x" onclick="SwithClockScreen()"></i> </p></li>-->
+				<li><p><i class="icon-picture icon-2x" style="font-size: 28px;" onclick="ChangeBackgroundImg()"></i> </p></li>
+			</ul>
+		</div>	
+		<div id="TimeScreen" style="margin:0 0 0 4%;padding:0;position:fixed;top:0;left:0;z-index:9;height:100%;width:96%;color: white;display:none">
+				<span id="Time"></span>
+		</div>
+		<div id="GrowingTime" style="margin:0 0 0 4%;padding:0;position:fixed;top:0;left:0;z-index:9;height:100%;width:96%;color: white;display:none">
+			<div style="right: 75px;position: fixed;top: 20px;">
+				<span id="GrowingDay" class="GrowingT"></span>
+				<span id="GrowingD" style="font-family: Microsoft YaHei; color: white; font-size: 1em;"></span>
+				<span id="GrowingHour" class="GrowingT"></span>
+				<span id="GrowingH" style="font-family: Microsoft YaHei; color: white; font-size: 1em;"></span>
+				<span id="GrowingMin" class="GrowingT"></span>
+				<span id="GrowingM" style="font-family: Microsoft YaHei; color: white; font-size: 1em;"></span>
+				<span id="GrowingSec" class="GrowingT"></span>
+				<span id="GrowingS" style="font-family: Microsoft YaHei; color: white; font-size: 1em;"></span>
+			</div>
+		</div>
+		<script type="text/javascript" src="script/Func.js"></script>
+	</body>
+</html>
