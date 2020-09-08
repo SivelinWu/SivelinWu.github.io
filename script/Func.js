@@ -5,7 +5,7 @@ var bOwnBackground = false;
 $(document).ready(function() {
     var TheDate = new Date("March 28, 2015");
     var MeetDate = new Date("May 6,2012");
-    var MeetMarried = new Date("December 6,2017");
+    var MeetMarried = new Date("December 25,2017");
     var DateNow = new Date();
     var deltaTogether = Math.floor((DateNow.getTime() - TheDate.getTime()) / (24 * 3600 * 1000));
     var deltaMeet = Math.floor((DateNow.getTime() - MeetDate.getTime()) / (24 * 3600 * 1000));
