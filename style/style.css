@@ -1,0 +1,178 @@
+﻿@font-face {
+	font-family: 'Quartz';
+	src: url('Quartz.eot'); /* IE9 Compat Modes */
+	src: url('Quartz.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+             url('Quartz.woff') format('woff'), /* Modern Browsers */
+             url('Quartz.ttf')  format('truetype'), /* Safari, Android, iOS */
+             url('Quartz.svg#Quartz') format('svg'); /* Legacy iOS */
+}
+
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.blur {    
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+            filter: blur(10px);    
+}
+
+@media (max-width: 4000px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/  
+  #Time{
+	font-family: Impact;
+	color: white;
+	font-weight: bolder;
+	font-size: 440px;
+	}  
+} 
+
+@media (max-width: 1800px) {
+	#Time{
+	font-family: Impact;
+	color: white;
+	font-weight: bolder;
+	font-size: 330px;
+	}
+}
+
+@media (max-width: 1300px) {
+	#Time{
+	font-family: Impact;
+	color: white;
+	font-weight: bolder;
+	font-size: 255px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#Time{
+	font-family: Impact;
+	color: white;
+	font-weight: bolder;
+	font-size: 170px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#Time{
+	font-family: Impact;
+	color: white;
+	font-weight: bolder;
+	font-size: 120px;
+	}
+}
+
+.NavigationBar {
+	margin-top: 110%; 
+	text-align: center;
+	font-family: Comic Sans MS; 
+	font-size: 19px; 
+	font-weight: 500;
+	padding-left: 0;
+}
+
+.NavigationMenu{height: 50px;
+	line-height:50px;
+	color: rgb(48, 201, 213);
+}
+
+.NavigationMenu :hover {
+	color: rgb(23, 178, 191);
+	background-color: rgb(204, 204, 204);
+	border-right: 9px solid rgb(255, 101, 26);
+	height: 50px;
+	line-height:50px;
+}
+
+.RightButtonList{
+	padding-top:1px;
+}
+
+.GrowingT{
+	font-family: "Quartz"; 
+	color: white; 
+	font-size: 2.2em;
+}
+
+.GrowingT:hover{
+	font-family: "Quartz"; 
+	color: #27efcb; 
+	font-size: 2.2em;
+}
+
+#GrowingDay{
+	font-family: "Quartz"; 
+	color: white; 
+	font-size: 8.4em;
+}
+
+#GrowingDay:hover{
+	font-family: "Quartz"; 
+	color: #27efcb; 
+	font-size: 8.4em;
+}
+
+#GrowingHour{
+	font-family: "Quartz"; 
+	color: white; 
+	font-size: 7em;
+}
+
+#GrowingHour:hover{
+	font-family: "Quartz"; 
+	color: #27efcb; 
+	font-size: 7em;
+}
+
+
+#GrowingMin{
+	font-family: "Quartz"; 
+	color: white; 
+	font-size: 4em;
+}
+
+#GrowingMin:hover{
+	font-family: "Quartz"; 
+	color: #27efcb; 
+	font-size: 4em;
+}
+
+
+#GrowingSec{
+	font-family: "Quartz"; 
+	color: white; 
+	font-size: 2.3em;
+}
+
+#GrowingSec:hover{
+	font-family: "Quartz"; 
+	color: #27efcb; 
+	font-size: 2.3em;
+}
+
+
+
+li{list-style-type:none;cursor: pointer;}
+
+textarea { resize: none; } 
+
