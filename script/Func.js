@@ -15,7 +15,7 @@ $(document).ready(function() {
 	window.onload=function(){
 		if(location.hostname.lastIndexOf("About") == -1 || location.pathname.lastIndexOf("About") == -1 || location.hostname.lastIndexOf("Gallery") == -1 || location.pathname.lastIndexOf("Gallery") == -1){
 		$("#Ourdate").typed({
-            strings: ["It has been " + deltaTogether + " days sine we fell in love^500<br>" + deltaMarried + " days since we got married^500<br>&nbsp;Wu Bin ♡ Chen Jian"],
+            strings: ["It has been " + deltaTogether + " days sine we fell in love.^500<br>" + deltaMarried + " days since we got married.^500<br>&nbsp;Wu Bin ♡ Chen Jian"],
             typeSpeed: 60,
             startDelay: 500,
             loop: false,
@@ -26,7 +26,7 @@ $(document).ready(function() {
 				setTimeout("$('#CenterContainer').fadeOut('5000');$('#GrowingTime').fadeIn('5000');",5000);			
 				},
         });
-		seed2 = setInterval("UpdateDeltaT(new Date('March 28, 2015'))",1000);
+		seed2 = setInterval("UpdateDeltaT(new Date('December 6,2017'))",1000);
 	}
 	}
 });
