@@ -1,19 +1,21 @@
-﻿var bSideMenuShow,bSideMenuLock = false;
+var bSideMenuShow,bSideMenuLock = false;
 var seed,seed2;
 var bOwnBackground = false;
 
 $(document).ready(function() {
     var TheDate = new Date("March 28, 2015");
     var MeetDate = new Date("May 6,2012");
+    var MeetMarried = new Date("December 6,2017");
     var DateNow = new Date();
     var deltaTogether = Math.floor((DateNow.getTime() - TheDate.getTime()) / (24 * 3600 * 1000));
     var deltaMeet = Math.floor((DateNow.getTime() - MeetDate.getTime()) / (24 * 3600 * 1000));
+    var deltaMarried = Math.floor((DateNow.getTime() - MeetMarried.getTime()) / (24 * 3600 * 1000));
     ChangeBackgroundImg();
     
 	window.onload=function(){
 		if(location.hostname.lastIndexOf("About") == -1 || location.pathname.lastIndexOf("About") == -1 || location.hostname.lastIndexOf("Gallery") == -1 || location.pathname.lastIndexOf("Gallery") == -1){
 		$("#Ourdate").typed({
-            strings: ["It has been " + deltaTogether + " days sine we fell in love^500<br>" + deltaMeet + " days since we met^500<br>&nbsp;Wu Bin ♡ Chen Jian"],
+            strings: ["It has been " + deltaTogether + " days sine we fell in love^500<br>" + deltaMarried + " days since we got married^500<br>&nbsp;Wu Bin ♡ Chen Jian"],
             typeSpeed: 60,
             startDelay: 500,
             loop: false,
