@@ -1,5 +1,6 @@
 ﻿var bSideMenuShow,bSideMenuLock = false;
 var seed,seed2;
+var bOwnBackground = false;
 
 $(document).ready(function() {
     var TheDate = new Date("March 28, 2015");
@@ -116,7 +117,6 @@ function FormatDigital(digital){
 	return newDigital;
 }
 
-var bOwnBackground = false;
 function ChangeBackgroundImg(){
 	if(!bOwnBackground){
 		bOwnBackground = true;
