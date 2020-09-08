@@ -1,4 +1,4 @@
-﻿.typed-cursor{
+.typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
@@ -99,13 +99,13 @@
 }
 
 .GrowingT{
-	font-family: Microsoft YaHei; 
+	font-family: Helvetica; 
 	color: white; 
 	font-size: 2.2em;
 }
 
 .GrowingT:hover{
-	font-family: Microsoft YaHei; 
+	font-family: Helvetica; 
 	color: #27efcb; 
 	font-size: 2.2em;
 }
