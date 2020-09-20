@@ -5,11 +5,11 @@ var bOwnBackground = false;
 $(document).ready(function() {
     var TheDate = new Date("March 28, 2015");
     var MeetDate = new Date("May 6,2012");
-    var MeetMarried = new Date("December 25,2017");
+    var MarriedDate = new Date("December 25,2017");
     var DateNow = new Date();
     var deltaTogether = Math.floor((DateNow.getTime() - TheDate.getTime()) / (24 * 3600 * 1000));
     var deltaMeet = Math.floor((DateNow.getTime() - MeetDate.getTime()) / (24 * 3600 * 1000));
-    var deltaMarried = Math.floor((DateNow.getTime() - MeetMarried.getTime()) / (24 * 3600 * 1000));
+    var deltaMarried = Math.floor((DateNow.getTime() - MarriedDate.getTime()) / (24 * 3600 * 1000));
     ChangeBackgroundImg();
     
 	window.onload=function(){
@@ -26,7 +26,7 @@ $(document).ready(function() {
 				setTimeout("$('#CenterContainer').fadeOut('5000');$('#GrowingTime').fadeIn('5000');",5000);			
 				},
         });
-		seed2 = setInterval("UpdateDeltaT(new Date('December 6,2017'))",1000);
+		seed2 = setInterval("UpdateDeltaT(new Date('December 25,2017'))",1000);
 	}
 	}
 });
